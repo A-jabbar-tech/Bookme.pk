@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+@layer base {
+  :root {
+    --primary-clr: #1476d1;
+    --secondary-clr: #1a8cf5;
+    --yelow-clr: #fec84b;
+    --primary-black: #313131;
+    --grey-clr: #344054;
+  }
+}
+
+@layer base {
+  a {
+    @apply no-underline text-white;
+  }
+
+  li {
+    @apply list-none;
+  }
+   h1 {
+    @apply text-white text-2xl;
+  }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
